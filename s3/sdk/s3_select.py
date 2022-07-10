@@ -10,13 +10,13 @@ r = client.select_object_content(
     Bucket=bucket_name,
     Key=key,
     ExpressionType='SQL',
-    Expression='select * from s3object s limit 5',
+    Expression='select * from s3object s where s."UserId" = "testuser"',
     InputSerialization={'CSV': {"FileHeaderInfo" : "Use"}},
     OutputSerialization={'CSV': {}}
 )
 
 for event in r['Payload']:
-    print(event)
+    # print(event)
     if 'Records' in event:
         records = event['Records']['Payload'].decode('utf-8')
         print(records)
