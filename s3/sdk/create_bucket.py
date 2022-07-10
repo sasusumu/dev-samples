@@ -19,6 +19,8 @@ try:
         }
     )
 
+    # resource.meta.client リソースオブジェクトからクライアントオブジェクトを取得
+    # get_waiter('bucket_exists') バケット作成用のウェイター
     waiter = resource.meta.client.get_waiter('bucket_exists')
     waiter.wait(Bucket=bucket_name)
 

@@ -18,4 +18,4 @@ try:
     print('Bucket deleted.')
 except botocore.exceptions.ClientError as e:
     print(e)
-    print('Bucket deletion failed.')
+    print('Delete bucket failed.')

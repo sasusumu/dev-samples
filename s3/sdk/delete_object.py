@@ -22,4 +22,4 @@ try:
     )
 except botocore.exceptions.ClientError as e:
     print(e)
-    print('Bucket creation failed.')
+    print('Delete object failed.')
