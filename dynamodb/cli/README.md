@@ -17,7 +17,7 @@ aws dynamodb list-tables
 ### 項目の操作
 ```
 # 項目の作成
-aws dynamodb put-item --table-name Notes --item "{\"UserId\":{\"S\":\"StudentA\"},\"NoteId\":{\"N\":\"11\"},\"Note\":{\"S\":\"HelloWorld!\"}}"
+aws dynamodb put-item --table-name Notes --item "{\"UserId\":{\"S\":\"StudentA\"},\"NoteId\":{\"N\":\"11\"},\"Note\":{\"S\":\"HelloWorld\"}}"
 
 # 項目の削除
 aws dynamodb delete-item --table-name Notes --key="{\"UserId\": {\"S\":\"StudentA\"}, \"NoteId\":{\"N\":\"11\"}}"
