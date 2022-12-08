@@ -21,6 +21,9 @@ aws dynamodb put-item --table-name Notes --item "{\"UserId\":{\"S\":\"StudentA\"
 
 # 項目の削除
 aws dynamodb delete-item --table-name Notes --key="{\"UserId\": {\"S\":\"StudentA\"}, \"NoteId\":{\"N\":\"11\"}}"
+
+# テーブルの削除
+aws dynamodb delete-table --table-name Notes
 ```
 
 ### DynamoDB Local
