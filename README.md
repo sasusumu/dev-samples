@@ -3,6 +3,6 @@
 以下のコマンドを実行しリポジトリをダウンロードしてください
 
 ```
-git clone https://github.com/sasusumu-dev/sample.git
+git clone https://github.com/sasusumu/dev-samples.git
 ```
 
